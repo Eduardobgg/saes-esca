@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAES · ESCA Santo Tomás (Simulación escolar)</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="gobbar">
+    <b>Gobierno de México</b>
+    <nav><a href="#">Trámites</a><a href="#">Gobierno</a></nav>
+  </div>
+  <div class="header-escuela">
+    <img class="crest-img crest-small" src="https://i.pinimg.com/originals/22/42/18/22421831a43187e599cf0629662935e7.png" alt="Escudo IPN">
+    <div class="titles">
+      <div class="t1">ESCUELA SUPERIOR DE COMERCIO Y ADMINISTRACIÓN</div>
+      <div class="t2">UNIDAD SANTO TOMÁS</div>
+    </div>
+    <img class="crest-img" src="https://escasto.ipn.mx/assets/files/escasto/img/esca-logo-300-x-380-.png" alt="Escudo ESCA Santo Tomás">
+  </div>
+  <div class="tabs">
+    <a class="active" href="index.html">Inicio</a><a href="#">Reglamento</a><a href="#">Ayuda</a><a href="#">Recuperar Contraseña</a>
+  </div>
+  <div class="breadcrumb">Inicio</div>
+
+  <div class="login-area">
+    <div class="login-box">
+      <h3>Iniciar Sesión</h3>
+      <label>Usuario:</label>
+      <input id="usuario" type="text">
+      <label>Password:</label>
+      <input id="password" type="password">
+      <label>Captcha:</label>
+      <div class="captcha-row">
+        <div class="captcha-img" id="captchaText">H3V9</div>
+        <span class="refresh" onclick="refrescarCaptcha()">&#8635;</span>
+      </div>
+      <input id="captcha" type="text">
+      <button class="btn" onclick="iniciarSesion()">Iniciar</button>
+    </div>
+    <div class="home-content">
+      <h2>Sistema de Administración Escolar</h2>
+      <p>Es la herramienta informática diseñada para apoyar en la consulta y atención de trámites escolares.</p>
+    </div>
+  </div>
+
+  <a class="banner-link" href="#"><b>Ingresa a realizar tu denuncia segura en:</b> denunciasegura.ipn.mx</a>
+  <a class="banner-link" href="#">¿Necesitas orientación o levantar una queja? Ingresa a orientación-queja</a>
+
+  <footer class="site">
+    © 2024 SAES IPN · IPN-DAE
+    <small>Proyecto escolar — simulación con fines académicos, no es el sitio oficial del IPN.</small>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
