@@ -51,7 +51,7 @@ body{margin:0;background:#dedede;font-family:Arial, Helvetica, sans-serif;color:
 .banner-link b{display:block;}
 
 /* alumnos layout */
-.alumnos-layout{display:flex;flex-wrap:wrap;}
+.alumnos-layout{display:flex;flex-wrap:nowrap;}
 .sidebar{width:150px;flex:0 0 150px;border-right:1px solid var(--border);font-size:11px;padding:6px 0;}
 .sidebar .cat{padding:4px 8px;font-weight:bold;color:#333;}
 .sidebar a.item{display:block;padding:3px 8px 3px 16px;color:var(--maroon);cursor:pointer;text-decoration:none;}
