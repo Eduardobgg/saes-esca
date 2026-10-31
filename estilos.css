@@ -8,7 +8,7 @@
 }
 *{box-sizing:border-box;}
 body{margin:0;background:#c9c9c9;font-family:Arial, Helvetica, sans-serif;color:var(--text);font-size:13px;}
-.wrap{max-width:960px;margin:0 auto;background:#fff;border:1px solid #000;box-shadow:0 0 6px rgba(0,0,0,.2);}
+.wrap{width:960px;margin:0 auto;background:#fff;border:1px solid #000;box-shadow:0 0 6px rgba(0,0,0,.2);}
 .hidden{display:none !important;}
 
 /* top gob bar */
@@ -99,42 +99,3 @@ table.calif tr:nth-child(even) td{background:#f4f4f4;}
 
 footer.site{background:var(--maroon);color:#eee;text-align:center;font-size:10px;padding:7px;}
 footer.site small{opacity:.8;display:block;margin-top:2px;}
-
-/* ====== RESPONSIVO (celular) ====== */
-@media (max-width: 640px){
-  /* el encabezado: logos y titulo se acomodan sin encimarse */
-  .header-escuela{flex-wrap:wrap;justify-content:center;gap:8px;padding:10px;}
-  .titles{order:3;flex:1 1 100%;}
-  .crest-img, .crest-img.crest-small{width:46px;height:46px;}
-
-  /* las pestañas pasan a varias lineas */
-  .tabs{flex-wrap:wrap;}
-  .tabs a{flex:1 1 auto;text-align:center;}
-
-  /* menu arriba (en fila, con scroll) y contenido abajo */
-  .alumnos-layout{flex-wrap:wrap;}
-  .sidebar{width:100%;flex:1 1 100%;border-right:none;border-bottom:2px solid var(--maroon);
-           display:flex;flex-wrap:wrap;gap:2px 6px;padding:8px;}
-  .sidebar .cat{width:100%;}
-  .sidebar a.item{padding:3px 6px;}
-  .sidebar .logout{order:99;}
-  .sidebar .acct{order:100;width:100%;}
-
-  .main-content{flex:1 1 100%;min-width:0;}
-  .accesos{flex:1 1 100%;border-left:none;border-top:1px solid var(--border);}
-
-  /* login: la caja ocupa todo el ancho */
-  .login-box{width:100%;}
-
-  /* tablas: se pueden recorrer de lado sin romper la pagina */
-  table.horario, table.calif{min-width:620px;}
-
-  /* encabezado del horario apilado */
-  .horario-head{flex-direction:column;align-items:flex-start;}
-}
-
-@media (max-width: 380px){
-  body{font-size:12px;}
-  .titles .t1{font-size:12px;}
-  .titles .t2{font-size:11px;}
-}
